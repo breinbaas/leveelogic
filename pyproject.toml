@@ -1,0 +1,33 @@
+# pyproject.toml
+
+# Defines the build system (uv uses 'hatchling' by default for builds)
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Defines all the project metadata
+[project]
+name = "leveelogic"
+version = "0.0.1"
+description = "LeveeLogic package for levee assessments."
+authors = [
+    { name = "Rob van Putten", email = "breinbaas@pm.me" },
+]
+readme = "README.md" # Optional: create a README.md file
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Dependencies 
+dependencies = [
+]
+
+# Project dependencies
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
